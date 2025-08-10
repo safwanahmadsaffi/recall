@@ -4,8 +4,8 @@ import app_utils as vutil
 # Main home page
 
 st.set_page_config(
-    page_title="RecallHQ",
-    page_icon="recallhq_icon.svg",
+    page_title="profAi",
+    page_icon="profai_icon.svg",
 )
 st.markdown(
     """<style>
@@ -23,14 +23,14 @@ def st_button(url, label, font_awesome_icon):
 def render_cta():
   with st.sidebar:
       st.write("Let's connect!")
-      st_button(url="https://www.linkedin.com/company/recallhq", label="LinkedIn", font_awesome_icon="fa-linkedin")
+      st_button(url="https://www.linkedin.com/company/profai", label="LinkedIn", font_awesome_icon="fa-linkedin")
 
 render_cta()
 
 # T
-home_title = "RecallHQ"
-home_introduction = "Welcome to RecallHQ, where the power of LLM technology is at your fingertips. Upload a video or Youtube link to a video in the Media Processor. Then interact with our pre-trained AI Assistant in the Knowledge Base of events. Whether you need to ask questions about the event, or generate summaries, RecallHQ has you covered. Let's start exploring the endless possibilities!"
-#home_privacy = "At RecallHQ, your privacy is our top priority. We use OpenAI's Whisper API to extract audio from videos and Youtube links. We do not store any data beyond what is required to process the audio and generate summaries."
+home_title = "profAi"
+home_introduction = "Welcome to profAi, where the power of LLM technology is at your fingertips. Upload a video or Youtube link to a video in the Media Processor. Then interact with our pre-trained AI Assistant in the Knowledge Base of events. Whether you need to ask questions about the event, or generate summaries, profAi has you covered. Let's start exploring the endless possibilities!"
+#home_privacy = "At profAi, your privacy is our top priority. We use OpenAI's Whisper API to extract audio from videos and Youtube links. We do not store any data beyond what is required to process the audio and generate summaries."
 getstarted_prompt = "Ready to explore the endless possibilities of AI? Let's get started today!"
 
 
