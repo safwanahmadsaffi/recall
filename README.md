@@ -1,4 +1,99 @@
 
+# 🧠 recallhq
+
+![recallhq logo](public/logo_dark.png)
+
+**recallhq** is your all-in-one AI-powered knowledge assistant, designed to help teams recall, organize, and interact with information seamlessly. With immersive modes, media processing, and a robust knowledge base, recallhq supercharges productivity and collaboration.
+
+---
+
+## 🚀 Features
+
+- **Knowledge Base:** Centralize and search your team’s knowledge.
+- **Media Processor:** Extract insights from audio, video, and documents.
+- **Immersive Mode (Beta):** Experience next-level interaction with your data.
+- **Event Q&A:** Instantly answer questions about past events and conversations.
+- **Customizable UI:** Personalize your experience with themes and avatars.
+- **Chainlit & Streamlit Integration:** Modern, interactive web interfaces.
+
+---
+
+## 📦 Folder Structure
+
+```
+recallhq/
+├── Home.py                # Main Streamlit app
+├── pages/                 # Modular app pages
+├── public/                # Static assets (images, CSS, JS)
+├── archive/               # Legacy or archived scripts
+├── .chainlit/             # Chainlit configuration
+├── .streamlit/            # Streamlit configuration
+├── startup_scripts/       # Service scripts for deployment
+├── requirements.txt       # Python dependencies
+├── README.md              # Project documentation
+└── ...
+```
+
+---
+
+## ⚡️ Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/recallhq.git
+   cd recallhq
+   ```
+
+2. **Create and activate a virtual environment**
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Configure environment variables**
+   - Copy `.env.sample` to `.env` and fill in your secrets.
+
+5. **Run the app**
+   ```bash
+   streamlit run Home.py
+   ```
+   The app will open at [http://localhost:8501](http://localhost:8501).
+
+---
+
+## 🛠️ Customization
+
+- **Avatars & Logos:** Replace images in `public/avatars/` and `public/`.
+- **Themes:** Edit `public/custom_chainlit.css` for custom styles.
+- **Configuration:** Adjust `.chainlit/config.toml` and `.streamlit/config.toml` as needed.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Please open issues or submit pull requests for improvements and new features.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 💡 Credits
+
+Made with ❤️ by the recallhq team.
+
+---
+
+> _Empower your team. Recall everything._
+
 ## **Overview**
 In order to help quickly understand both the visual content and spoken discussion during an event, or an MOOC such as the LLM Agents Berkeley course (which are hours long or multi-day), we want to build an assistant that leverages LLMs to summarize recordings, interpret visuals, and answer follow-up questions related to the event. This system would significantly reduce the time needed to review long events, and would event content more accessible and actionable.
 
