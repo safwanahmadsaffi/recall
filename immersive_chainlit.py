@@ -6,7 +6,7 @@ from uuid import uuid4
 from chainlit.logger import logger
 from video_index.video_processing.immersive_tools import update_video_message
 from video_index.video_processing.immersive_server import manager
-from recall_utils import load_state
+from profai_utils import load_state
 from video_index.rags.text_rag import create_new_index
 from constants import KNOWLEDGE_BASE_PATH, immersive_demo_labels
 import sys
@@ -75,7 +75,7 @@ async def start():
         content="Lets try out the new (Realtime) speech-to-speech experience together!"
     ).send()
     # apex_message = cl.Message("")
-    # video = cl.Video(name="output_video", url="/recall_immersive_video/video_processing/output_video.mp4", display="inline")
+    # video = cl.Video(name="output_video", url="/profai_immersive_video/video_processing/output_video.mp4", display="inline")
     # elements = [
     #       video,
     #   ]
@@ -113,7 +113,7 @@ async def on_message(message: cl.Message):
 
 @cl.on_audio_start
 async def on_audio_start():
-    cl.user_session.set("recall_websocket", manager.latest_socket)
+    cl.user_session.set("profai_websocket", manager.latest_socket)
     try:
         openai_realtime: RealtimeClient = cl.user_session.get("openai_realtime")
         await openai_realtime.connect()

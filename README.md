@@ -1,9 +1,8 @@
+# 🧠 profAi
 
-# 🧠 recallhq
+![profAi logo](public/logo_dark.png)
 
-![recallhq logo](public/logo_dark.png)
-
-**recallhq** is your all-in-one AI-powered knowledge assistant, designed to help teams recall, organize, and interact with information seamlessly. With immersive modes, media processing, and a robust knowledge base, recallhq supercharges productivity and collaboration.
+**profAi** is your all-in-one AI-powered knowledge assistant, designed to help teams recall, organize, and interact with information seamlessly. With immersive modes, media processing, and a robust knowledge base, profAi supercharges productivity and collaboration.
 
 ---
 
@@ -21,7 +20,7 @@
 ## 📦 Folder Structure
 
 ```
-recallhq/
+profai/
 ├── Home.py                # Main Streamlit app
 ├── pages/                 # Modular app pages
 ├── public/                # Static assets (images, CSS, JS)
@@ -40,8 +39,8 @@ recallhq/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/recallhq.git
-   cd recallhq
+   git clone https://github.com/yourusername/profai.git
+   cd profai
    ```
 
 2. **Create and activate a virtual environment**
@@ -88,11 +87,11 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 💡 Credits
 
-Made with ❤️ by the recallhq team.
+Made with ❤️ by the profAi team.
 
 ---
 
-> _Empower your team. Recall everything._
+> _Empower your team. profAi everything._
 
 ## **Overview**
 In order to help quickly understand both the visual content and spoken discussion during an event, or an MOOC such as the LLM Agents Berkeley course (which are hours long or multi-day), we want to build an assistant that leverages LLMs to summarize recordings, interpret visuals, and answer follow-up questions related to the event. This system would significantly reduce the time needed to review long events, and would event content more accessible and actionable.
@@ -126,4 +125,4 @@ In order to help quickly understand both the visual content and spoken discussio
     * `source .venv/bin/activate`
 - Run `pip install -r requirements.txt` to install the dependencies
 - Run `streamlit run Home.py` to start the app
-- To enable the Immersive Mode: Run `chainlit run immersive_chainlit.py -w --port 8080` to start the chainlit app before navigating to the immersive mode section in the sidebar. 
+- To enable the Immersive Mode: Run `chainlit run immersive_chainlit.py -w --port 8080` to start the chainlit app before navigating to the immersive mode section in the sidebar.

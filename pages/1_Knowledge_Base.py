@@ -8,7 +8,7 @@ from pathlib import Path
 import speech_recognition as sr
 from concurrent.futures import ThreadPoolExecutor
 from constants import KNOWLEDGE_BASE_PATH, demo_media_labels
-from recall_utils import load_state, generate_videoclips
+from profai_utils import load_state, generate_videoclips
 from video_index.rags.text_rag import search_knowledge_base, create_new_index, get_llm_response, get_mm_llm_response, get_media_indices, get_llm_tts_response
 from video_index.rags.scraper import perform_web_search
 from streamlit_extras.bottom_container import bottom

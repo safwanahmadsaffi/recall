@@ -4,7 +4,7 @@ import re
 import streamlit as st
 
 from constants import KNOWLEDGE_BASE_PATH
-from recall_utils import update_state
+from profai_utils import update_state
 from video_index.rags.text_rag import save_processed_document, generate_tags_and_images
 from video_index.video_processing.ingest_video import save_uploaded_media, Video
 

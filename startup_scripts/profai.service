@@ -1,0 +1,15 @@
+# Follow logs in realtime
+# sudo journalctl -f --unit=profai
+[Unit]
+Description=Service to run the profAi startup script
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/llm_bootcamp/profai
+ExecStart=/bin/bash -c 'cd /home/ubuntu/llm_bootcamp/profai && source .venv/bin/activate && streamlit run Home.py'
+# optional items below
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
